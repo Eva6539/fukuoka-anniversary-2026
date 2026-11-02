@@ -22,7 +22,7 @@
 
 首次在線開啟並完成保存後，可離線重開行程、照片及所有語音。Google 地圖、背景圖磚與線上路線仍需網路；離線位置圖不是道路導航。
 
-`offline.html` 內含圖片、程式與所有語音，另於 Releases 提供完整下載包。GitHub Pages 首次啟用方式見 `DEPLOYMENT.md`。更新後執行 `python scripts/package_site.py` 重建離線版與快取清單。
+`offline.html` 內含圖片、程式與所有語音，可透過 GitHub Code → Download ZIP 下載完整網站。GitHub Pages 首次啟用方式見 `DEPLOYMENT.md`。更新後執行 `python scripts/package_site.py` 重建離線版與快取清單。
 
 ## 來源與授權
 
