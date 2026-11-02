@@ -1,0 +1,192 @@
+{
+  "checked": "2026-11-03",
+  "sources": [
+    {
+      "id": "event-hakata",
+      "url": "https://christmas-advent.jp/fukuoka-hakata/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "2026/11/7–12/25",
+        "平日 16:00–23:00，L.O.22:45"
+      ],
+      "source_text_sha256": "dc5e718456222e6ff917ebccaf60c9c7b82f2c5bd565e9f59951ccf74dcdc64f"
+    },
+    {
+      "id": "event-tenjin",
+      "url": "https://christmas-advent.jp/fukuoka-tenjin/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "2026/11/14–12/26",
+        "平日 17:00–23:00，L.O.22:45",
+        "11/28–29 休業"
+      ],
+      "source_text_sha256": "3676d2db88954b512ea3e4a79f08e1365f61c32971fc12d6eaea0feddf84bcc4"
+    },
+    {
+      "id": "event-central",
+      "url": "https://christmas-advent.jp/fukuoka-chuo-koen/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "2026/11/12–12/25",
+        "平日 17:00–22:00，L.O.21:45",
+        "燈飾至24:00"
+      ],
+      "source_text_sha256": "e49f8fcaea5f65a1f4cf0e369031a2ebc8f6010486bdf79bcfb9fc5a91efeda2"
+    },
+    {
+      "id": "event-daimyo",
+      "url": "https://christmas-advent.jp/fukuoka-daimyo/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "2026/11/13–12/25",
+        "平日17:00–22:00"
+      ],
+      "source_text_sha256": "fc0dc987b6fc02a27a80120913ed8867242d09c972ce386de304205855be8a39"
+    },
+    {
+      "id": "one-faq",
+      "url": "https://onefukuokahotel.jp/faq/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "入住15:00；退房12:00；依方案可能不同"
+      ],
+      "source_text_sha256": "4138a6516b1a0b4ec9646b831af01359b8ee2f679b07163f120b6922fb8d2d86"
+    },
+    {
+      "id": "one-roof",
+      "url": "https://onefukuokahotel.jp/restaurant/the-roof/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "19F；BAR17:00–24:00，L.O.23:00"
+      ],
+      "source_text_sha256": "19901d582c439c11a91f760471a4ad6abe4a68b01d03de5abc0c37b735e14b66"
+    },
+    {
+      "id": "kamado-access",
+      "url": "https://kamadojinja.or.jp/access/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "太宰府站至內山まほろば號約10分鐘、¥100；步行太宰府站至神社約40分鐘"
+      ],
+      "source_text_sha256": "314e891e7298c18498a0d3b12b56a7c534ec257bcf70d1fe4804a112c06980a4"
+    },
+    {
+      "id": "rec",
+      "url": "https://rec-coffee.com/pages/coffee-shop-hakata",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "博多丸井6F；10:00–21:00"
+      ],
+      "source_text_sha256": "ffe58a605a7828e4970edac9f452d748c971b1872e7ecc74f49218f1d7c8e846"
+    },
+    {
+      "id": "yamanaka",
+      "url": "https://motsunabe-yamanaka.com/akasaka_/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "赤坂店；週一16:00–23:00，L.O.22:30",
+        "牛腸鍋¥2480每人，兩人份起；強棒麵¥350"
+      ],
+      "source_text_sha256": "d7a062f5339ee6718e2ddb6a9f45cf6713b13fef475e1135f42d55a1fec90d21"
+    },
+    {
+      "id": "shin",
+      "url": "https://www.hakata-shinshin.com/tenpo_parco",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "PARCO本館B1；11:00–23:00，L.O.22:30"
+      ],
+      "source_text_sha256": "74a6dadbd7d2a4242570e5aed172ac2b9605711a8d81ab26fcd3560ae0c77e7d"
+    },
+    {
+      "id": "fish",
+      "url": "https://sakanaotoko.com/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "官方午餐11:00–14:30；晚餐16:30–23:00",
+        "官網11月限定階梯定食貼文，供應依當日"
+      ],
+      "source_text_sha256": "11721c1e6183e2fff0c78aa4f90ed1170dbaae5541748f5c91086697d27997aa"
+    },
+    {
+      "id": "fish-feature",
+      "url": "https://www.nishitetsu.jp/nishitetsu_news/entry_type/post-8724/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "2026/01採訪綜合刺身定食為定番人氣；當時價格¥2178",
+        "午餐L.O.14:00；價格屬報導時點"
+      ],
+      "source_text_sha256": "e25c4a92a635d457b860d6b9cd99f92620f882a8714b6748e9df7ac1c63e51b2"
+    },
+    {
+      "id": "tenmangu",
+      "url": "https://www.dazaifutenmangu.or.jp/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "11月通常06:30–19:00，依臨時參拜公告"
+      ],
+      "source_text_sha256": "89a9299e3c1ef9a55ce7da83a3063b7e2de1fdd3cb122c6f4e189782518257f7"
+    },
+    {
+      "id": "jnto-hotline",
+      "url": "https://www.japan.travel/fr/plan/hotline/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "050-3816-2787；24小時；中文、英文、韓文",
+        "警察110；消防救護119"
+      ],
+      "source_text_sha256": "e87e364efa41def68e3b760594d2d6cf1c00eb9d815978f2f89d12a891f8a071"
+    },
+    {
+      "id": "amam-hours",
+      "url": "https://amamdacotan.com/pages/shop/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "官方六本松店地址3-7-6；網頁未列當日營業時段"
+      ],
+      "source_text_sha256": "e885aa9247c51575c1f252499624717db10b55fae91d98c841a7d32221d3b73c"
+    },
+    {
+      "id": "airport",
+      "url": "https://www.fukuoka-airport.jp/access/bus2.html",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "免費國內線／國際線接駁；依官網時刻表候車，未以固定分鐘保證整段時間"
+      ],
+      "source_text_sha256": "cd7b16dfd18ca75233b754967e9ae535ba23a79d4a7516cab5e3064d66022542"
+    },
+    {
+      "id": "seimon",
+      "url": "https://fazg900.gorp.jp/",
+      "http_status": 200,
+      "checked": "2026-11-03",
+      "findings": [
+        "官方店家頁列17:00–24:00，L.O.23:00；週日休",
+        "頁面同時含2016–17年休業公告，保留再次確認提醒"
+      ],
+      "source_text_sha256": "2aecec9589dbb989ae776a8720c9e717c152772d28f16937f77a8c75e2592ab5"
+    }
+  ],
+  "limits": [
+    "交通時間是規劃估時；沒有即時車流、特定日班次或即時候位。",
+    "住宿、餐廳預約與航班來自使用者原稿，未接入私人訂位系統。",
+    "Google評分為2026-11-03取得的公開店家頁快照，不是即時更新。",
+    "未定餐廳及私人晚餐不補地址。"
+  ]
+}

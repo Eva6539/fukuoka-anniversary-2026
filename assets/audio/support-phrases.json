@@ -1,0 +1,98 @@
+[
+  {
+    "id": "support01",
+    "category": "交通",
+    "ja": "福岡空港の国際線ターミナルまでお願いします。",
+    "zh": "請載我們到福岡機場國際線航廈。",
+    "file": "assets/audio/support01.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support02",
+    "category": "交通",
+    "ja": "都ホテル博多までお願いします。",
+    "zh": "請載我們到博多都酒店。",
+    "file": "assets/audio/support02.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support03",
+    "category": "交通",
+    "ja": "この住所までお願いします。",
+    "zh": "請載我們到這個地址。（出示地址）",
+    "file": "assets/audio/support03.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support04",
+    "category": "交通",
+    "ja": "太宰府駅はどこですか。",
+    "zh": "請問太宰府站在哪裡？",
+    "file": "assets/audio/support04.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support05",
+    "category": "餐廳",
+    "ja": "二人です。席は空いていますか。",
+    "zh": "我們兩位，請問有空位嗎？",
+    "file": "assets/audio/support05.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support06",
+    "category": "餐廳",
+    "ja": "どのくらい待ちますか。",
+    "zh": "請問大約要等多久？",
+    "file": "assets/audio/support06.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support07",
+    "category": "餐廳",
+    "ja": "これは生ですか。火を通してもらえますか。",
+    "zh": "這是生的嗎？可以幫我煮熟嗎？",
+    "file": "assets/audio/support07.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support08",
+    "category": "飯店",
+    "ja": "チェックインまで荷物を預かっていただけますか。",
+    "zh": "入住前可以寄放行李嗎？",
+    "file": "assets/audio/support08.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support09",
+    "category": "購物",
+    "ja": "持ち帰りでお願いします。",
+    "zh": "麻煩幫我外帶。",
+    "file": "assets/audio/support09.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support10",
+    "category": "購物",
+    "ja": "クレジットカードは使えますか。",
+    "zh": "可以刷信用卡嗎？",
+    "file": "assets/audio/support10.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support11",
+    "category": "求助",
+    "ja": "中国語を話せる方はいますか。",
+    "zh": "請問有會說中文的人嗎？",
+    "file": "assets/audio/support11.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  },
+  {
+    "id": "support12",
+    "category": "求助",
+    "ja": "病院に行きたいです。手伝っていただけますか。",
+    "zh": "我想去醫院，可以幫助我嗎？",
+    "file": "assets/audio/support12.mp3",
+    "voice": "Open JTalk / HTS Voice Mei (synthetic)"
+  }
+]
