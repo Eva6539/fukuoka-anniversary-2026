@@ -1,9 +1,7 @@
-# Current delivery status
+# Current status
 
-Prepared and validated locally: responsive HTML, five daily maps with approximate coordinates, 37 itinerary entries, inline Google place/route iframe switching, 19 Japanese synthetic MP3 language examples, local offline caching, five KML imports.
+Network access is working. Real map tiles, Google Maps pages, official restaurant sources, Commons images and OSRM routing have been retrieved successfully.
 
-Not yet completed: creating the remote GitHub repository, GitHub Pages publication, external map rendering verification, exact place-coordinate verification, live Google ratings/review counts, downloaded real photos, restaurant-specific popular-item research and recommendation reasons, and item-specific audio after those menu items are verified.
+Prepared: Google embedded daily map mode; real OSM tiles; 22 cached road route segments; full-day overview, animated road playback, touch stop details; 23 real images with credits; 15 verified Google rating snapshots; six sourced restaurant recommendations; 19 matching synthetic Japanese MP3 clips.
 
-Blocker: runtime network proxy rejects api.github.com, Google Maps and Wikipedia. A network configuration draft has been saved; saving/publishing that draft in environment settings is needed before retrying. Existing GitHub credential binding was detected; no secret values were printed or copied.
-
-Restaurant language examples are explicitly labeled unverified and are not presented as evidence of actual menu availability or popularity.
+Publication and live verification are being completed. Unknown addresses remain unknown. Images are real source images, not generated illustrations. Google iframe markers can differ from the complete itinerary letters because unknown addresses are omitted; the A-to-B map retains all itinerary letters and supports custom interactions.

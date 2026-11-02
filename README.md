@@ -1,25 +1,27 @@
-# 四週年・福岡楓紅聖誕前夕之旅
+# 四週年・楓紅與聖誕前夕・福岡
 
-2026-11-13 至 2026-11-17，繁體中文手機旅行頁。
+2026/11/13–11/17，手機優先的五天旅行網站。
 
-## 使用
+- Google Maps 直接嵌入：切換日期看已知地址的全日道路預覽，留在同一頁。
+- A→B 動畫圖：真實 OpenStreetMap 圖磚、FOSSGIS OSRM 道路路線，播放／暫停／重播。
+- 37 個行程節點，點字母或行程卡查看上一站至此站交通、實景與評分快照。
+- 23 張本地實景照片：店家官方照片與 Wikimedia Commons，逐張標示來源與授權。
+- 六家餐廳具名招牌／人氣品項、推薦理由、兩人搭配與來源；19 句對應日文合成 MP3。
+- 15 個 Google 評分快照，2026/11/03 查核；未顯示的評論數不猜測。
+- 首次在線載入後可離線讀取行程、照片與音檔。Google 地圖與 OSM 背景圖磚需要網路，離線顯示位置示意。
 
-網站入口 `index.html`，每日字母標記、分段 Google Maps 導航、交通估時、人氣餐點待查證區及 19 句日文語言練習 MP3。
-第一次在線開啟後，行程與本站音檔會由 Service Worker 快取；Google Maps、即時評價、外部實景照片與 OpenStreetMap 圖磚需要網路。離線座標圖不是道路導航。
+## 資料限制
 
-## 查證限制
+未定晚餐／茶屋等地址保留待定；不推測紀念日晚餐。Google 免 Key 嵌入圖只涵蓋已知地址，Google 自動標記可能與完整行程字母不同；完整字母、逐站動畫與自訂交通詳情在 A→B 模式。
+路網路線不是即時車流或列車班表，行車時間以行程中的緩衝估時為準。最後出入口依現場指示。大名花園城市與河畔等屬區域參考位置。2026 聖誕活動、餐廳價格／餘量、航班均應出發前再確認。
 
-地址座標為概略位置，需以 Google Maps 店家頁確認。評分、評論數與照片尚未在製作環境核實，不捏造數值或以示意圖冒充實景。未提供地址的餐廳保留待定。交通估時非即時班次；2026 聖誕活動日期、營業時間及菜單需出發前再確認。
+## 來源與授權
 
-## GitHub Pages
+`PHOTO-SOURCES.json`、`LOCATION-SOURCES.json`、`GOOGLE-RATINGS.json` 列出來源。餐點來源在頁內各店推薦區。
+Commons 照片遵循各自 CC 授權並保留作者；店家照片著作權歸原作者，不宣稱自由授權。照片經調整尺寸與轉為 JPEG，頁內縮圖亦有裁切。
+Leaflet 1.9.4：BSD-2-Clause；OpenStreetMap：ODbL；FOSSGIS OSRM 公共路線服務：https://routing.openstreetmap.de/。
+語音：Open JTalk／HTS Voice Mei，MMDAgent Project Team／Nagoya Institute of Technology，CC BY 3.0，見 AUDIO-LICENSE.txt。
 
-將本目錄內容置於公開專案 `fukuoka-anniversary-2026` 的 main 分支根目錄，至 Settings → Pages 選擇 Deploy from a branch / main / root。無需 API key 或建置工具。
+## 發布
 
-## 來源
-
-行程來自使用者提供的 HTML。地圖：Leaflet 1.9.4（BSD-2-Clause）與 OpenStreetMap；照片按需從 Wikipedia 載入並連結來源。Google 評價、照片與地圖連結回 Google Maps。
-日文語音由 Open JTalk 與 HTS Voice Mei 合成；模型為 MMDAgent Project Team / Nagoya Institute of Technology，CC BY 3.0，詳見 AUDIO-LICENSE.txt。
-
-## 日期與行程互動
-
-選日期先顯示全日地圖，依字母順序播放可暫停或重播。點擊地標或行程點，手機顯示可收合的詳情面板，包含上一站至此站交通與頁內路線。地址待定的點保留順序，不放置假座標。圖上連線與動畫是造訪順序示意。
+純靜態網站，入口 `index.html`，不需要環境變數。`.github/workflows/pages.yml` 自動發布 GitHub Pages；`offline.html` 另提供內含照片、地圖資料和 MP3 的單檔版本。

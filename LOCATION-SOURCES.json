@@ -1,0 +1,128 @@
+{
+  "airport": {
+    "lat": 33.5848249,
+    "lng": 130.4443117,
+    "source": "https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E3%80%81%E3%80%92812-0851+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%8B%E8%87%BC%E4%BA%95%EF%BC%97%EF%BC%97%EF%BC%98%E2%88%92%EF%BC%91+%E5%9B%BD%E9%9A%9B%E7%B7%9A%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/@33.5848249,130.4417368,17z/data=!3m1!4b1!4m6!3m5!1s0x3541903bd146a00b:0xac216feb2215ce7a!8m2!3d33.5848249!4d130.4443117!16s%2Fg%2F1jkz4zw51?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "miyako": {
+    "lat": 33.5897507,
+    "lng": 130.4228429,
+    "source": "https://www.google.com/maps/place/%E9%83%BD%E3%83%9B%E3%83%86%E3%83%AB%E5%8D%9A%E5%A4%9A/@33.5897507,130.420268,17z/data=!4m9!3m8!1s0x354191c84f27c995:0x707a13c544a1c4c9!5m2!4m1!1i2!8m2!3d33.5897507!4d130.4228429!16s%2Fg%2F11h7cl_nbg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "rec": {
+    "lat": 33.5890644,
+    "lng": 130.4194607,
+    "source": "https://www.google.com/maps/place/Rec+Coffee%E5%8D%9A%E5%A4%9A%E3%83%9E%E3%83%AB%E3%82%A4%E5%BA%97/@33.5890644,130.4168858,17z/data=!3m1!4b1!4m6!3m5!1s0x354191b86e4a9979:0x898f5f5450d80501!8m2!3d33.5890644!4d130.4194607!16s%2Fg%2F11csbv8fgz?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "station": {
+    "lat": 33.5899592,
+    "lng": 130.4193188,
+    "source": "https://www.google.com/maps/place/JR%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D%E5%BA%83%E5%A0%B4/@33.5899592,130.4167439,17z/data=!3m1!4b1!4m6!3m5!1s0x354191c791384245:0xb180f30077bd989f!8m2!3d33.5899592!4d130.4193188!16s%2Fg%2F11c71b0k72?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "kamado": {
+    "lat": 33.5288381,
+    "lng": 130.5525313,
+    "source": "https://www.google.com/maps/place/%E5%AE%9D%E6%BA%80%E5%AE%AE+%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE/@33.5288381,130.5499564,17z/data=!3m1!4b1!4m6!3m5!1s0x35419b62bebd8eff:0x1680bb62fa4ab75b!8m2!3d33.5288381!4d130.5525313!16s%2Fm%2F010xdvyv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "tenmangu": {
+    "lat": 33.5213697,
+    "lng": 130.5348239,
+    "source": "https://www.google.com/maps/place/%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE/@33.5213697,130.532249,17z/data=!3m1!4b1!4m6!3m5!1s0x35419b9f2aebfbcd:0xb824d1aba75fae97!8m2!3d33.5213697!4d130.5348239!16zL20vMDd2XzAz?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "seimon": {
+    "lat": 33.5927466,
+    "lng": 130.4100685,
+    "source": "https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E3%81%9B%E3%81%84%E3%82%82%E3%82%93%E6%89%95%E3%81%84/@33.5927466,130.4074936,17z/data=!3m1!4b1!4m6!3m5!1s0x354191954f0d5d79:0x2d825044fac019e2!8m2!3d33.5927466!4d130.4100685!16s%2Fg%2F1v298t2d?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "one": {
+    "lat": 33.5908005,
+    "lng": 130.4000978,
+    "source": "https://www.google.com/maps/place/ONE+FUKUOKA+HOTEL/@33.5908005,130.3975229,17z/data=!4m9!3m8!1s0x3541910015df176b:0x365438237fd12a0e!5m2!4m1!1i2!8m2!3d33.5908005!4d130.4000978!16s%2Fg%2F11y8jclhcy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "amam": {
+    "lat": 33.5780845,
+    "lng": 130.3814381,
+    "source": "https://www.google.com/maps/place/%E3%82%A2%E3%83%9E%E3%83%A0+%E3%83%80%E3%82%B3%E3%82%BF%E3%83%B3/@33.5780845,130.3788632,17z/data=!3m1!4b1!4m6!3m5!1s0x3541934b41f180c3:0x1333ebceaa3e8f72!8m2!3d33.5780845!4d130.3814381!16s%2Fg%2F11fgjm25qw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "ohori": {
+    "lat": 33.5862065,
+    "lng": 130.3764646,
+    "source": "https://www.google.com/maps/place/%E5%A4%A7%E6%BF%A0%E5%85%AC%E5%9C%92/@33.5862065,130.3738897,17z/data=!3m1!4b1!4m6!3m5!1s0x354193cc8cdba4c7:0xcdef79ddef4df798!8m2!3d33.5862065!4d130.3764646!16s%2Fm%2F0h7p53f?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "fish": {
+    "lat": 33.5843858,
+    "lng": 130.3995851,
+    "source": "https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E7%82%89%E7%AB%AF+%E9%AD%9A%E7%94%B7+%EF%BC%88%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9E%E3%83%B3%EF%BC%89/@33.5843858,130.3970102,17z/data=!3m1!4b1!4m6!3m5!1s0x35419184bfae8e31:0x9880f28c4c804413!8m2!3d33.5843858!4d130.3995851!16s%2Fg%2F1tp0bfzg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "yamanaka": {
+    "lat": 33.5875425,
+    "lng": 130.3908465,
+    "source": "https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E3%82%82%E3%81%A4%E9%8D%8B+%E3%82%84%E3%81%BE%E4%B8%AD+%E8%B5%A4%E5%9D%82%E5%BA%97+%E7%A6%8F%E5%B2%A1/@33.5875425,130.3882716,17z/data=!3m1!4b1!4m6!3m5!1s0x35419187582ebcdf:0xa01b7f01658ba8a1!8m2!3d33.5875425!4d130.3908465!16s%2Fg%2F1tjl3p45?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "garden": {
+    "lat": 33.5895371,
+    "lng": 130.3950768,
+    "source": "https://www.openstreetmap.org/node/13003765105",
+    "checked": "2026-11-03",
+    "type": "OSM 大名花園城市街區參考位置（非指定入口）"
+  },
+  "cityhall": {
+    "lat": 33.5900083,
+    "lng": 130.4011491,
+    "source": "https://www.google.com/maps/place/%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%BD%B9%E6%89%80%E8%A5%BF%E5%81%B4%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%BA%83%E5%A0%B4/@33.5900083,130.3985742,17z/data=!3m1!4b1!4m6!3m5!1s0x35419191d3db05ff:0x4ed5886779f9a255!8m2!3d33.5900083!4d130.4011491!16s%2Fg%2F11bw1zj996?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "central": {
+    "lat": 33.5904126,
+    "lng": 130.4029541,
+    "source": "https://www.openstreetmap.org/way/33111543",
+    "checked": "2026-11-03",
+    "type": "OSM 公園座標"
+  },
+  "shin": {
+    "lat": 33.590874,
+    "lng": 130.39855,
+    "source": "https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93ShinShin+%E7%A6%8F%E5%B2%A1PARCO%E5%BA%97/@33.590874,130.3959751,17z/data=!3m1!4b1!4m6!3m5!1s0x35419121947f1c8b:0xef0010f2aa747f31!8m2!3d33.590874!4d130.39855!16s%2Fg%2F11r2gvy7dw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+    "checked": "2026-11-03",
+    "type": "Google Maps 地點座標"
+  },
+  "river": {
+    "lat": 33.593647,
+    "lng": 130.405295,
+    "source": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%B4%B2",
+    "checked": "2026-11-03",
+    "type": "Wikipedia 地點／區域座標"
+  },
+  "sando": {
+    "lat": 33.52025,
+    "lng": 130.5323,
+    "type": "太宰府參道區域示意位置",
+    "source": "https://www.dazaifutenmangu.or.jp/",
+    "checked": "2026-11-03"
+  }
+}

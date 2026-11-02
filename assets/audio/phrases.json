@@ -1,57 +1,57 @@
 [
   {
     "id": "phrase01",
-    "ja": "ドリップコーヒーを一つ、ラテを一つお願いします。",
-    "zh": "請給我們一杯手沖、一杯拿鐵。",
+    "ja": "はちみつバタートーストを一つお願いします。",
+    "zh": "請給我們一份蜂蜜奶油吐司。",
     "file": "assets/audio/phrase01.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase02",
-    "ja": "おすすめのケーキは何ですか。",
-    "zh": "推薦哪款蛋糕？",
+    "ja": "レックコーヒーラテを一つ、ブラックコーヒーを一つお願いします。",
+    "zh": "請給我們一杯 REC 拿鐵和一杯黑咖啡。",
     "file": "assets/audio/phrase02.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase03",
-    "ja": "刺身の盛り合わせを二人前お願いします。",
-    "zh": "請給我們兩人份刺身拼盤。",
+    "ja": "ごまさばを一つお願いします。",
+    "zh": "請給我們一份芝麻鯖魚。",
     "file": "assets/audio/phrase03.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase04",
-    "ja": "イカの活き造りはありますか。いくらですか。",
-    "zh": "有活烏賊刺身嗎？多少錢？",
+    "ja": "おすすめのお刺身を、二人で食べたいです。",
+    "zh": "我們兩人想吃推薦的刺身，請幫我們建議。",
     "file": "assets/audio/phrase04.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase05",
-    "ja": "人気のパンはどれですか。",
-    "zh": "哪款麵包最受歡迎？",
+    "ja": "ダコタンバーガーを一つお願いします。",
+    "zh": "請給我們一個 Dacotan 漢堡。",
     "file": "assets/audio/phrase05.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase06",
-    "ja": "これとこれを一つずつ、持ち帰りでお願いします。",
-    "zh": "這個和這個各一個，請外帶。",
+    "ja": "明太ペペロンチーノバゲットを一つ、持ち帰りでお願いします。",
+    "zh": "請給我們一個明太子蒜辣法棍，外帶。",
     "file": "assets/audio/phrase06.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase07",
-    "ja": "ランチのおすすめは何ですか。",
-    "zh": "午餐推薦什麼？",
+    "ja": "お刺身盛り合わせ定食を一つお願いします。",
+    "zh": "請給我們一份綜合刺身定食。",
     "file": "assets/audio/phrase07.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase08",
-    "ja": "海鮮丼はありますか。",
-    "zh": "有海鮮丼嗎？",
+    "ja": "今月の階段定食は、まだありますか。",
+    "zh": "請問這個月的階梯定食還有嗎？",
     "file": "assets/audio/phrase08.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
@@ -64,22 +64,22 @@
   },
   {
     "id": "phrase10",
-    "ja": "味噌のもつ鍋を二人前お願いします。",
+    "ja": "みそ味のもつ鍋を二人前お願いします。",
     "zh": "請給我們兩人份味噌牛腸鍋。",
     "file": "assets/audio/phrase10.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase11",
-    "ja": "締めに、ちゃんぽん麺をお願いします。",
-    "zh": "最後請加強棒麵收尾。",
+    "ja": "締めに、ちゃんぽん麺を一人前お願いします。",
+    "zh": "最後請加一人份強棒麵收尾。",
     "file": "assets/audio/phrase11.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },
   {
     "id": "phrase12",
-    "ja": "ラーメンを二つお願いします。麺は普通でお願いします。",
-    "zh": "請給我們兩碗拉麵，麵的硬度一般。",
+    "ja": "博多シンシンラーメンを二つお願いします。麺は普通でお願いします。",
+    "zh": "請給我們兩碗博多 ShinShin 拉麵，麵的硬度一般。",
     "file": "assets/audio/phrase12.mp3",
     "voice": "HTS Voice Mei (MMDAgent), synthesized with Open JTalk"
   },

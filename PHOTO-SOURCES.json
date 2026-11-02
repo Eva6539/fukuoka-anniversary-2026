@@ -1,0 +1,244 @@
+{
+  "airport": {
+    "file": "assets/photos/airport.jpg",
+    "title": "福岡空港",
+    "author": "Nkmr844",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_Airport_Domestic_Terminal.jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E7%A9%BA%E6%B8%AF",
+    "caption": "福岡機場歷史實景；不作為國際線入口指示。"
+  },
+  "miyako": {
+    "file": "assets/photos/miyako.jpg",
+    "title": "都ホテル 博多",
+    "author": "STA3816",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Miyako_Hotel_Hakata_20190914_02.jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E9%83%BD%E3%83%9B%E3%83%86%E3%83%AB_%E5%8D%9A%E5%A4%9A",
+    "caption": "都ホテル 博多實景；拍攝季節與現況可能不同。"
+  },
+  "station": {
+    "file": "assets/photos/station.jpg",
+    "title": "博多駅",
+    "author": "ぱちょぴ",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:JR_Hakata_City_2011_Jan.jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E5%8D%9A%E5%A4%9A%E9%A7%85",
+    "caption": "博多駅實景；拍攝季節與現況可能不同。"
+  },
+  "kamado": {
+    "file": "assets/photos/kamado.jpg",
+    "title": "竈門神社",
+    "author": "Miya.m",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kamado_shrine_01.JPG",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE",
+    "caption": "竈門神社實景；拍攝季節與現況可能不同。"
+  },
+  "tenmangu": {
+    "file": "assets/photos/tenmangu.jpg",
+    "title": "太宰府天満宮",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:20100719_Dazaifu_Tenmangu_Shrine_3328.jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE",
+    "caption": "太宰府天満宮實景；拍攝季節與現況可能不同。"
+  },
+  "sando": {
+    "file": "assets/photos/sando.jpg",
+    "title": "太宰府天満宮",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:20100719_Dazaifu_Tenmangu_Shrine_3328.jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE",
+    "caption": "太宰府天滿宮實景，非特定茶屋照片。"
+  },
+  "river": {
+    "file": "assets/photos/river.jpg",
+    "title": "中洲",
+    "author": "STA3816",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nakasu02.jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%B4%B2",
+    "caption": "中洲區域實景，非指定當晚散步點。"
+  },
+  "ohori": {
+    "file": "assets/photos/ohori.jpg",
+    "title": "大濠公園",
+    "author": "Tzuhsun Hsu from Taipei, Taiwan",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%BF%A0%E5%85%AC%E5%9C%92_(3359545709).jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%BF%A0%E5%85%AC%E5%9C%92",
+    "caption": "大濠公園實景；拍攝季節與現況可能不同。"
+  },
+  "garden": {
+    "file": "assets/photos/garden.jpg",
+    "title": "福岡大名ガーデンシティ",
+    "author": "SuFlyer",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_Daimyo_Garden_City_(January_2023).jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E5%A4%A7%E5%90%8D%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%82%B7%E3%83%86%E3%82%A3",
+    "caption": "福岡大名ガーデンシティ實景；拍攝季節與現況可能不同。"
+  },
+  "cityhall": {
+    "file": "assets/photos/cityhall.jpg",
+    "title": "福岡市役所",
+    "author": "そらみみ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_City_Office_20180511.jpg",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%BD%B9%E6%89%80",
+    "caption": "福岡市役所外觀，非 2026 聖誕活動實拍。"
+  },
+  "central": {
+    "file": "assets/photos/central.jpg",
+    "title": "天神中央公園",
+    "author": "User:Oarih",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_Acros.JPG",
+    "pageSource": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92",
+    "caption": "天神中央公園實景；拍攝季節與現況可能不同。"
+  },
+  "rec": {
+    "file": "assets/photos/rec.jpg",
+    "title": "REC COFFEE 博多丸井店實景",
+    "caption": "REC COFFEE 博多丸井店實景",
+    "author": "REC COFFEE",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://rec-coffee.com/pages/coffee-shop-hakata",
+    "source": "https://rec-coffee.com/pages/coffee-shop-hakata",
+    "originalImage": "https://rec-coffee.com/cdn/shop/files/DSC00552_9692d566-547f-4b26-be12-6c7255e886cd.jpg?v=1614290783&width=1500",
+    "pageSource": "https://rec-coffee.com/pages/coffee-shop-hakata"
+  },
+  "rec-food": {
+    "file": "assets/photos/rec-food.jpg",
+    "title": "2023 官方介紹的厚切蜂蜜吐司；現行菜單已改名蜂蜜奶油吐司，照片非現行品項保證。",
+    "caption": "2023 官方介紹的厚切蜂蜜吐司；現行菜單已改名蜂蜜奶油吐司，照片非現行品項保證。",
+    "author": "REC COFFEE",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://rec-coffee.com/blogs/yomimono/marui",
+    "source": "https://rec-coffee.com/blogs/yomimono/marui",
+    "originalImage": "https://cdn.shopify.com/s/files/1/0297/5193/5024/files/DSC02633_e80d9f8d-bc72-4199-be2f-263782583965_1024x1024.jpg?v=1692269343",
+    "pageSource": "https://rec-coffee.com/blogs/yomimono/marui"
+  },
+  "amam": {
+    "file": "assets/photos/amam.jpg",
+    "title": "六本松店官方鹹麵包系列實拍",
+    "caption": "六本松店官方鹹麵包系列實拍",
+    "author": "AMAM DACOTAN",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://amamdacotan.com/",
+    "source": "https://amamdacotan.com/",
+    "originalImage": "https://amamdacotan.com/cdn/shop/collections/1_collection_savoury_bread_large.png?v=1638152866",
+    "pageSource": "https://amamdacotan.com/"
+  },
+  "fish": {
+    "file": "assets/photos/fish.jpg",
+    "title": "博多炉端魚男官網實景",
+    "caption": "博多炉端魚男官網實景",
+    "author": "博多炉端 魚男",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://sakanaotoko.com/",
+    "source": "https://sakanaotoko.com/",
+    "originalImage": "https://sakanaotoko.com/wp-content/uploads/2020/08/DSC06991_1500.jpg",
+    "pageSource": "https://sakanaotoko.com/"
+  },
+  "shin": {
+    "file": "assets/photos/shin.jpg",
+    "title": "ShinShin 福岡 PARCO 店內實景",
+    "caption": "ShinShin 福岡 PARCO 店內實景",
+    "author": "博多らーめん ShinShin",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://www.hakata-shinshin.com/tenpo_parco",
+    "source": "https://www.hakata-shinshin.com/tenpo_parco",
+    "originalImage": "https://www.hakata-shinshin.com/wordpress/wp-content/uploads/2021/03/tenpo06_photo.jpg",
+    "pageSource": "https://www.hakata-shinshin.com/tenpo_parco"
+  },
+  "shin-menu": {
+    "file": "assets/photos/shin-menu.jpg",
+    "title": "福岡 PARCO 店官方現行菜單圖片（2026/06 版）",
+    "caption": "福岡 PARCO 店官方現行菜單圖片（2026/06 版）",
+    "author": "博多らーめん ShinShin",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://www.hakata-shinshin.com/menu_parco01",
+    "source": "https://www.hakata-shinshin.com/menu_parco01",
+    "originalImage": "https://www.hakata-shinshin.com/wordpress/wp-content/uploads/2026/06/1-1.jpg",
+    "pageSource": "https://www.hakata-shinshin.com/menu_parco01"
+  },
+  "yamanaka": {
+    "file": "assets/photos/yamanaka.jpg",
+    "title": "山中赤坂店官方實景",
+    "caption": "山中赤坂店官方實景",
+    "author": "博多もつ鍋 やま中",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://motsunabe-yamanaka.com/akasaka_/",
+    "source": "https://motsunabe-yamanaka.com/akasaka_/",
+    "originalImage": "https://motsunabe-yamanaka.com/wp/wp-content/uploads/2024/02/mainimage-1.jpg",
+    "pageSource": "https://motsunabe-yamanaka.com/akasaka_/"
+  },
+  "seimon": {
+    "file": "assets/photos/seimon.jpg",
+    "title": "せいもん払い官方照片",
+    "caption": "せいもん払い官方照片；實際供應依當日漁獲。",
+    "author": "漁師料理の店 せいもん払い／ぐるなび",
+    "license": "店家官方照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://fazg900.gorp.jp/",
+    "source": "https://fazg900.gorp.jp/",
+    "originalImage": "https://rimage.gnst.jp/rest/img/4cdk8d030000/s_0004.jpg?t=1412788855",
+    "pageSource": "https://fazg900.gorp.jp/"
+  },
+  "amam-baguette": {
+    "file": "assets/photos/amam-baguette.jpg",
+    "title": "明太ペペロンチーノ バゲット 【六本松店】",
+    "caption": "明太ペペロンチーノ バゲット 【六本松店】",
+    "author": "AMAM DACOTAN",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://amamdacotan.com/products/明太ペペロンチーノ-バゲット-コピー",
+    "source": "https://amamdacotan.com/products/明太ペペロンチーノ-バゲット-コピー",
+    "originalImage": "https://cdn.shopify.com/s/files/1/0526/0148/7529/files/DSC02522.jpg?v=1791208689",
+    "pageSource": "https://amamdacotan.com/products/明太ペペロンチーノ-バゲット-コピー"
+  },
+  "amam-food": {
+    "file": "assets/photos/amam-food.jpg",
+    "title": "ダコタン バーガー 【六本松店】",
+    "caption": "ダコタン バーガー 【六本松店】",
+    "author": "AMAM DACOTAN",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://amamdacotan.com/products/ダコタン-バーガー-六本松店",
+    "source": "https://amamdacotan.com/products/ダコタン-バーガー-六本松店",
+    "originalImage": "https://cdn.shopify.com/s/files/1/0526/0148/7529/files/DSC02288.jpg?v=1790424512",
+    "pageSource": "https://amamdacotan.com/products/ダコタン-バーガー-六本松店"
+  },
+  "one": {
+    "file": "assets/photos/one.jpg",
+    "title": "ONE FUKUOKA HOTEL 官網實景",
+    "caption": "ONE FUKUOKA HOTEL 官網實景",
+    "author": "ONE FUKUOKA HOTEL",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://onefukuokahotel.jp/",
+    "source": "https://onefukuokahotel.jp/",
+    "originalImage": "https://onefukuokahotel.jp/assets/img/_K7A4365_sp.webp",
+    "pageSource": "https://onefukuokahotel.jp/"
+  },
+  "yamanaka-food": {
+    "file": "assets/photos/yamanaka-food.jpg",
+    "title": "山中官方牛腸鍋",
+    "caption": "山中赤坂店官方牛腸鍋照片；份量依實際點餐。",
+    "author": "博多もつ鍋 やま中",
+    "license": "店家官網照片・著作權歸原作者（非自由授權）",
+    "licenseUrl": "https://motsunabe-yamanaka.com/akasaka_/",
+    "source": "https://motsunabe-yamanaka.com/akasaka_/",
+    "originalImage": "https://motsunabe-yamanaka.com/wp/wp-content/uploads/2024/02/slide_02_12@2x.jpg",
+    "pageSource": "https://motsunabe-yamanaka.com/akasaka_/"
+  }
+}
