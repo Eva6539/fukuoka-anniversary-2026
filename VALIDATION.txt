@@ -1,0 +1,13 @@
+PASS 320x740: all five days, no horizontal overflow
+PASS 360x800: all five days, no horizontal overflow
+PASS 375x812: all five days, no horizontal overflow
+PASS 390x844: all five days, no horizontal overflow
+PASS 414x896: all five days, no horizontal overflow
+PASS 430x932: all five days, no horizontal overflow
+PASS 844x390: all five days, no horizontal overflow
+PASS 768x1024: all five days, no horizontal overflow
+PASS 1440x1000: all five days, no horizontal overflow
+PASS: embedded place and walking route switch, no external map action and no new tab
+PASS: primary touch controls at least 44 CSS px
+PASS: offline reload, offline diagram, cached MP3 metadata
+PASS: no JavaScript errors; external live maps, ratings and photos not verified because network is blocked
