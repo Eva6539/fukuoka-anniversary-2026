@@ -2,6 +2,9 @@
 (() => {
   'use strict';
   const facts = TRAVEL_FACTS;
+  const encodeGoogleText = text => btoa(String.fromCharCode(...new TextEncoder().encode(text))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+  function googlePlaceEmbed(name) { return 'https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1z'+encodeGoogleText(name)+'!3m1!1szh-TW!5m1!1szh-TW'; }
+  function googleRouteEmbed(names, mode='driving') { return 'https://www.google.com/maps/embed?origin=mfe&pb=!1m'+(2+2*names.length)+'!4m'+(1+2*names.length)+'!3e'+({walking:2,driving:0,transit:3}[mode])+names.map(name=>'!4m1!2z'+encodeGoogleText(name)).join('')+'!3m1!1szh-TW!5m1!1szh-TW'; }
   const $ = (s, root = document) => root.querySelector(s);
   const $$ = (s, root = document) => [...root.querySelectorAll(s)];
   const esc = escapeHTML;
@@ -37,8 +40,10 @@
   }
   function phraseCard(phrase) {
     const card = document.createElement('article'); card.className = 'phrase-card';
-    card.innerHTML = '<p class="jp" lang="ja">' + esc(phrase.ja) + '</p><p class="zh">' + esc(phrase.zh) + '</p>' + (phrase.file ? '<audio controls preload="none" src="' + esc(phrase.file) + '" aria-label="' + esc(phrase.zh) + '"></audio>' : '') + '<button class="field-button" type="button">大字給店員看</button>';
-    $('button', card).onclick = () => displayPhrase(phrase); return card;
+    card.innerHTML = '<p class="jp" lang="ja">' + esc(phrase.ja) + '</p><p class="zh">' + esc(phrase.zh) + '</p>' + (phrase.file ? '<audio hidden preload="metadata" src="' + esc(phrase.file) + '" aria-label="' + esc(phrase.zh) + '"></audio>' : '') + '<div class="phrase-actions">' + (phrase.file ? '<button class="field-button speak-phrase" type="button" aria-label="播放日文">▶ 聽日文</button>' : '') + '<button class="field-button show-phrase" type="button">大字給店員看</button></div>';
+    $('.show-phrase', card).onclick = () => displayPhrase(phrase);
+    if (phrase.file) { const audio=$('audio',card),button=$('.speak-phrase',card);button.onclick=()=>{if(!audio.paused)audio.pause();else audio.play().catch(()=>announce('音檔載入失敗，連網保存後再試'));};audio.onplay=()=>{button.textContent='Ⅱ 暫停';button.setAttribute('aria-label','暫停日文');};audio.onpause=audio.onended=()=>{button.textContent='▶ 聽日文';button.setAttribute('aria-label','播放日文');}; }
+    return card;
   }
   function sourceLink(url, label) { return '<a class="source-link" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(label || '查看官方來源') + ' ↗</a>'; }
   function sourcesBlock(key) {
@@ -64,15 +69,19 @@
   }
 
   // Keep the itinerary's complete letter map as the first view, with Google as a second mode.
+  fitDaily = function(day) { const map=maps[day];if(!map||!map.getContainer().offsetWidth)return;const points=DATA.days[day-1].filter(row=>row[1]).map(row=>[DATA.places[row[1]][1],DATA.places[row[1]][2]]);map.stop();map.invalidateSize(false);map.fitBounds(L.latLngBounds(points).pad(.18),{maxZoom:15,animate:false}); };
   const originalMode = setMapMode;
   setMapMode = function(day, mode) {
     originalMode(day, mode); const host = $('#planner' + day), actual = mapModes.get(day);
-    $('.mapcaption', host).textContent = actual === 'google' ? 'Google 參考地圖 · 全部站點與動畫在「今日完整路線」' : 'A → B 依序造訪 · 實線為道路，未定地點保留在清單';
+    $('.mapcaption', host).textContent = actual === 'google' ? 'Google 本日首段預覽 · 其他路段請點行程查看' : 'A → B 依序造訪 · 實線為道路，未定地點保留在清單';
     $$('.map-mode-switch button', host).forEach(b => { b.setAttribute('aria-pressed', String(b.dataset.mode === actual)); });
     const geo = $('.geo-button', host); if (geo) geo.hidden = actual !== 'animation';
+    if(actual==='animation')fitDaily(day);
+    if(actual==='google'){const frame=$('.google-day-map',host);frame.loading='eager';if(!frame.getAttribute('src')&&frame.dataset.source)frame.src=frame.dataset.source;}
   };
   DATA.days.forEach((rows, idx) => {
     const day = idx + 1, host = $('#planner' + day), section = host.closest('.day');
+    const googleFrame=$('.google-day-map',host),known=[];for(const row of rows)if(row[1]&&row[1]!==known.at(-1))known.push(row[1]);const googleNames=known.slice(0,2).map(key=>DATA.places[key][3]);googleFrame.dataset.source=googleNames.length>1?googleRouteEmbed(googleNames):googlePlaceEmbed(googleNames[0]);googleFrame.removeAttribute('src');
     const note = document.createElement('p'); note.className = 'day-note'; note.textContent = facts.daily[idx].note; $('.dayhead', section).after(note);
     $('.map-mode-switch [data-mode="animation"]', host).textContent = '今日完整路線';
     $('.map-mode-switch [data-mode="google"]', host).textContent = 'Google 地圖';
@@ -168,7 +177,7 @@
     $$('.bottomnav a').forEach(a=>{a.classList.toggle('active',a.dataset.view===view);a.setAttribute('aria-current',a.dataset.view===view?'page':'false');});
     if(view==='itinerary')requestAnimationFrame(()=>{maps[selectedDay]?.invalidateSize();arrangeTripLabels(selectedDay);});
     if(view==='language')renderLanguage();if(view==='support')renderSupport();
-    if(scroll)$('#filters').scrollIntoView({block:'start',behavior:reducedMotion?'instant':'smooth'});
+    if(scroll)window.scrollTo({top:$('.hero').getBoundingClientRect().bottom+window.scrollY,behavior:'instant'});
   }
   $$('.bottomnav a').forEach(a=>a.onclick=e=>{e.preventDefault();history.replaceState(null,'','#'+a.dataset.view);setView(a.dataset.view);});
   function renderLanguage() {
@@ -238,5 +247,5 @@
   $$('.original,.guide-intro,.gallery-section').forEach(e=>e.remove());
   $$('.livepanel>p').forEach(e=>e.textContent='Google 地圖直接在本頁顯示；路線與班次以當下查詢為準。');
   $('.hero>p').textContent='2026.11.13 — 11.17 · 博多、太宰府、天神';
-  const footer=$('.foot');if(footer)footer.innerHTML='資料查核 '+facts.checked+' · 交通為估時，營業與價格為快照。<br>日文語音：Open JTalk／HTS Voice Mei，<a href="AUDIO-LICENSE.txt">CC BY 3.0</a>。照片來源見各圖。';
+  const footer=$('.foot');if(footer)footer.innerHTML='資料查核 '+facts.checked+' · 交通為估時，營業與價格為快照。<br>語音：Open JTalk／HTS Voice Mei，MMDAgent Project Team／名古屋工業大學，<a href="AUDIO-LICENSE.txt">CC BY 3.0</a>。照片來源見各圖。';
 })();

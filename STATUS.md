@@ -1,7 +1,7 @@
-# Current status
+# Publication status
 
-Network access is working. Real map tiles, Google Maps pages, official restaurant sources, Commons images and OSRM routing have been retrieved successfully.
+The complete mobile itinerary, real photos, audio and source records are in this repository. Local browser validation covers six viewport widths, all five dates, all 37 stops, expanded drawers, animation, offline reload, image loading and audio playback.
 
-Prepared: Google embedded daily map mode; real OSM tiles; 22 cached road route segments; full-day overview, animated road playback, touch stop details; 23 real images with credits; 15 verified Google rating snapshots; six sourced restaurant recommendations; 19 matching synthetic Japanese MP3 clips.
+GitHub Pages is not enabled yet. Both the connected GitHub credential and the GitHub Actions token receive HTTP 403 `Resource not accessible by integration` when creating the Pages site. This is a GitHub integration permission limit, not an environment network denial. An owner can enable Pages under Settings → Pages; see DEPLOYMENT.md.
 
-Publication and live verification are being completed. Unknown addresses remain unknown. Images are real source images, not generated illustrations. Google iframe markers can differ from the complete itinerary letters because unknown addresses are omitted; the A-to-B map retains all itinerary letters and supports custom interactions.
+The full letter map uses OpenStreetMap and cached road geometry. Google maps are an additional in-page reference; their generated letters may differ. Five flexible/private entries have no confirmed coordinates. Reservations and the flight time come from the original itinerary, not a private booking-system lookup.

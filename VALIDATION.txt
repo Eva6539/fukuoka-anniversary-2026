@@ -1,5 +1,8 @@
-PASS: six viewport widths, five date tabs, all 37 ordered stops, full-day overview first
-PASS: actual map-marker selection, previous-to-current traffic, embedded route, next stop, close mobile drawer
-PASS: animation advance, pause stability, replay reset, date-switch cancellation, unlocated stop details
-PASS: playback completes with final stop retained
-PASS: no new windows, no JavaScript errors; external map imagery/ratings still unverified
+PASS: 6 widths, 5 dates, 37 ordered stops; every known point inside the daily map; drawer tabs and long text remain within viewport.
+PASS: restaurant-specific menu, images, matching audio, phrase card, saved visits, animation and pause/date cancellation.
+PASS: four focused views, one restaurant expanded at a time, language categories and support details.
+PASS: reload offline, 23 cached real images, 31 cached MP3 clips, actual offline audio playback; no new windows or app errors.
+PASS: standalone HTML with all external requests blocked still displays images and plays matching Japanese audio.
+
+LIVE VERIFICATION: real OpenStreetMap tile responses HTTP 200; Google Maps embed rendered with airport and hotel route labels; no application JavaScript errors.
+PUBLICATION LIMIT: GitHub Pages creation rejected with HTTP 403 Resource not accessible by integration for both connected credential and Actions token; owner setup remains necessary.
