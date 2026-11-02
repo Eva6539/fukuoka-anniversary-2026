@@ -843,4 +843,145 @@ document.querySelector('#filters button[data-day="1"]').click();
 function fitDaily(day){const m=maps[day];if(!m)return;const coords=DATA.days[day-1].filter(r=>r[1]).map(r=>{const p=DATA.places[r[1]];return[p[1],p[2]];});m.invalidateSize();m.fitBounds(L.latLngBounds(coords).pad(.18),{maxZoom:15});}
 requestAnimationFrame(()=>fitDaily(1));document.querySelectorAll('#filters button[data-day]').forEach(b=>b.addEventListener('click',()=>requestAnimationFrame(()=>{if(b.dataset.day==='all')DATA.days.forEach((d,i)=>fitDaily(i+1));else fitDaily(Number(b.dataset.day));})));
 if(location.protocol.startsWith('http')&&'serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').then(async reg=>{await navigator.serviceWorker.ready;const s=document.getElementById('cache-status');if(navigator.serviceWorker.controller)s.textContent='已啟用離線旅行頁';else s.textContent='離線快取建立中，稍後重新開啟';}).catch(()=>{document.getElementById('cache-status').textContent='離線快取未啟用，可另存 HTML';});}
+</script><style>.hero{padding-top:28px;padding-bottom:25px}.hero h1{font-size:38px;line-height:1.4;margin:10px 0}.hero-note,.hero .stats{display:none}.container>.notice,.guide-intro,.offlineinfo{display:none}.toolbar{margin:0 0 12px;padding:8px 0}.toolbar button[data-day]{flex:1;text-align:center;padding:10px 8px}.dayhead{padding:18px 22px}.dayhead h2{font-size:22px}.dayhead p{display:none}.dayhead .hotel{font-size:11px}.mapintro{margin:10px 0;font-size:12px}.planner .leafmap{height:430px}.mapcaption{font-size:11px}.day .stops{display:none}.day .legend,.day .routebar{display:none}.day .livepanel{margin-top:12px}.day .mapbox{margin-top:0}.day .livepanel .photo{margin-top:10px}.trip-controls{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:12px 0 8px}.trip-controls button,.trip-controls select{border:1px solid #d7dfd2;background:#fff;border-radius:9px;min-height:44px;padding:8px 12px;color:#284d3c;font:inherit;font-size:12px;touch-action:manipulation}.trip-controls .play-trip{background:#284d3c;color:white;border-color:#284d3c;flex:1}.trip-progress{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12px;color:#687b68;margin:9px 0}.trip-progress progress{flex:1;min-width:30px;height:6px;accent-color:#a94b36}.trip-points{display:flex;gap:7px;overflow:auto;padding:4px 2px 11px;scroll-padding:5px;scrollbar-width:thin}.trip-point{min-width:112px;max-width:170px;flex-shrink:0;background:#f5f2e9;border:1px solid #e4dfd3;border-radius:11px;padding:10px;color:#314b3a;text-align:left;min-height:84px;font:inherit;cursor:pointer}.trip-point .point-name{display:block;font-size:12px;line-height:1.5;margin-top:5px;white-space:normal}.trip-point .point-time{font-size:10px;color:#817e6b;display:block}.trip-point .letter{width:24px;height:24px;font-size:12px}.trip-point.selected{border-color:#a94b36;background:#f6e8dc;box-shadow:0 0 0 1px #a94b36}.trip-point.pending{border-style:dashed}.trip-point:focus-visible{outline:3px solid #bc914d;outline-offset:1px}.trip-detail{background:white;border:1px solid #d9dfd1;border-radius:14px;padding:18px;margin-top:8px;scroll-margin-top:80px}.trip-detail[hidden]{display:none!important}.trip-detail h3{margin:5px 0 12px;font-weight:550;font-size:19px;line-height:1.6}.trip-detail p{font-size:13px;line-height:1.8}.trip-detail .detail-time{font-size:11px;color:#a06135}.trip-detail .incoming{padding:12px;background:#f2f4eb;border-radius:9px}.trip-detail .incoming b{display:block;color:#3a5b42}.trip-detail .detail-actions{display:flex;flex-wrap:wrap;gap:7px}.trip-detail button,.trip-detail a{font:inherit;font-size:12px;min-height:44px;border:1px solid #d3ddcc;background:#f3f5ed;color:#2c5140;padding:9px 12px;border-radius:8px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.trip-detail button:disabled{opacity:.4;cursor:default}.trip-detail .detail-nav{display:flex;justify-content:space-between;margin-top:14px;padding-top:12px;border-top:1px solid #ebe9df}.trip-idle{font-size:13px;color:#6f7d6a;background:#f1f4eb;border-radius:10px;padding:13px;margin:8px 0}.mapmarker.current{background:#a94b36!important;box-shadow:0 0 0 5px #a94b3628,0 2px 6px #1235;z-index:900!important}.trip-status{font-size:11px;color:#7b775f;line-height:1.7}.trip-highlight{fill:#a94b36;stroke:#fff;stroke-width:3}.trip-caption{font-size:11px;color:#7a7c6d;margin:7px 0}.trip-mode{margin:10px 0;display:flex;gap:6px;flex-wrap:wrap}.trip-mode button.active{background:#284d3c;color:#fff}.trip-help{margin:0 0 8px;color:#7b7e70;font-size:11px}.day .livepanel h3{font-size:15px}.original{margin-top:16px}.bottomnav a:nth-child(4){display:none}.container{padding-top:12px}@media(max-width:660px){.hero{padding:19px 21px 20px}.hero h1{max-width:none;font-size:25px;line-height:1.45}.hero h1 br{display:none}.hero:after{font-size:95px;top:0}.hero p{font-size:11px;max-width:none}.eyebrow{font-size:9px}.container{padding-top:0}.toolbar{margin-bottom:10px}.toolbar button[data-day]{padding:9px 5px;font-size:12px}.dayhead{padding:13px 16px;display:flex;align-items:center;gap:8px}.dayhead h2{font-size:18px;margin:3px 0}.dayhead small{font-size:9px}.dayhead .hotel{display:none}.planner .leafmap{height:clamp(265px,43svh,390px)}.day>.planner{padding:0 10px 14px}.trip-detail{padding:14px}.trip-detail h3{font-size:17px}.trip-point{min-width:106px;max-width:150px}.trip-controls{gap:6px}.trip-controls button,.trip-controls select{padding:8px 10px}.trip-detail .detail-actions button{flex:1}.trip-controls .play-trip{min-width:120px}.trip-progress{margin:7px 0}.trip-status{font-size:10px}.mapcaption{font-size:10px;line-height:1.6}}@media(prefers-reduced-motion:reduce){.mapmarker.current{box-shadow:0 0 0 3px #a94b3628}}
+.close-stop{float:right;margin:0 0 5px 8px}.trip-detail .incoming p{margin-bottom:0}.trip-detail:after{content:'';display:block;clear:both}@media(max-width:660px){.trip-detail:not([hidden]){position:fixed;left:10px;right:10px;bottom:calc(82px + env(safe-area-inset-bottom));max-height:46svh;overflow:auto;overscroll-behavior:contain;z-index:1200;box-shadow:0 -3px 30px #203d3130;border-radius:18px}.trip-detail .close-stop{position:sticky;top:0;z-index:2;background:#284d3c;color:#fff}.trip-detail .detail-nav button{min-width:100px}}
+.trip-detail .detail-actions button{flex:1 1 calc(50% - 7px);min-width:120px;line-height:1.6}.trip-detail .detail-nav{gap:10px}.trip-detail .detail-nav button{flex:1}
+</style><script>// A date opens the complete map, then a single selected-stop detail panel.
+const tripStates = new Map();
+let playbackTimer = null, frameId = null, playingDay = null;
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function stopPlayback() {
+  clearTimeout(playbackTimer); playbackTimer = null;
+  if (frameId !== null) cancelAnimationFrame(frameId);
+  frameId = null; playingDay = null;
+  tripStates.forEach(s => { s.playing = false; s.play.textContent = '▶ 播放今日順序'; s.play.setAttribute('aria-pressed','false'); });
+}
+function tripMarker(day, index) {
+  const state = tripStates.get(day), row = DATA.days[day - 1][index], map = maps[day];
+  if (!map) return;
+  map.eachLayer(layer => {
+    if (!(layer instanceof L.Marker)) return;
+    const p = row && row[1] && DATA.places[row[1]], ll = layer.getLatLng();
+    const el = layer.getElement();
+    if (el) el.classList.toggle('current', Boolean(p && ll.lat === p[1] && ll.lng === p[2]));
+  });
+  if (row && row[1]) {
+    const p = DATA.places[row[1]];
+    if (!state.dot) state.dot = L.circleMarker([p[1],p[2]], {radius:8,color:'#fff',weight:3,fillColor:'#a94b36',fillOpacity:1}).addTo(map);
+    state.dot.setLatLng([p[1],p[2]]); state.dot.setStyle({opacity:1,fillOpacity:1});
+  } else if (state.dot) state.dot.setStyle({opacity:0,fillOpacity:0});
+}
+function embedTripRoute(day, index, mode) {
+  const rows = DATA.days[day-1], row = rows[index], previous = rows[index-1];
+  if (!row[1] || !previous || !previous[1]) return;
+  const from = DATA.places[previous[1]], to = DATA.places[row[1]], panel = document.getElementById('live'+day);
+  panel.querySelector('h3').textContent = letters[index-1]+' → '+letters[index]+'｜'+from[0]+' → '+to[0];
+  panel.querySelector('iframe').src = 'https://maps.google.com/maps?output=embed&hl=zh-TW&saddr='+encodeURIComponent(from[3])+'&daddr='+encodeURIComponent(to[3])+'&dirflg='+({walking:'w',transit:'r',driving:'d'}[mode]);
+  panel.hidden=false;
+  panel.querySelector('.photo').innerHTML='';
+  const detail=tripStates.get(day).detail;
+  detail.insertBefore(panel,detail.querySelector('.detail-nav'));
+  panel.scrollIntoView({block:'nearest',behavior:reducedMotion?'instant':'smooth'});
+}
+function selectTripStop(day, index, options={}) {
+  const s=tripStates.get(day), rows=DATA.days[day-1];
+  if(!s || index<0 || index>=rows.length)return;
+  if(!options.playback)stopPlayback();
+  // Keep the reusable map card alive before replacing the selected detail content.
+  document.getElementById('planner'+day).append(document.getElementById('live'+day));
+  s.index=index;
+  const row=rows[index],p=row[1]?DATA.places[row[1]]:null,prev=rows[index-1];
+  s.points.querySelectorAll('.trip-point').forEach((b,i)=>{b.classList.toggle('selected',i===index);b.setAttribute('aria-pressed',String(i===index));});
+  const chosen=s.points.children[index];
+  s.points.scrollTo({left:Math.max(0,chosen.offsetLeft-s.points.offsetLeft-s.points.clientWidth/2+chosen.clientWidth/2),behavior:reducedMotion?'instant':'smooth'});
+  s.progress.value=index+1;
+  s.counter.textContent=(index+1)+' / '+rows.length+' 站';
+  s.status.textContent=options.playback?'依序展示中：'+letters[index]+' '+(p?p[0]:'待定地點'):'已選 '+letters[index]+'｜'+(p?p[0]:'待定／未公開地點');
+  s.idle.hidden=true;s.detail.hidden=Boolean(options.playback && window.innerWidth<=660);
+  const previousLabel=prev ? letters[index-1]+' '+(prev[1]?DATA.places[prev[1]][0]:'待定／未公開地點'):'本日第一站';
+  s.detail.innerHTML='<div class="detail-time">'+escapeHTML(row[0])+'</div><h3><span class="letter '+(!p?'pendingletter':'')+'">'+letters[index]+'</span>'+escapeHTML(p?p[0]:'待定／未公開地點')+'</h3><div class="incoming"><b>'+escapeHTML(index?previousLabel+' → '+letters[index]+' '+(p?p[0]:'待定地點'):'起點・集合資訊')+'</b><p>'+escapeHTML(row[2])+'</p></div><p>'+escapeHTML(row[3])+'</p>'+(!p?'<p class="flag">地址尚未提供，無法定位或繪製本段交通；播放時保留這一站。</p>':'')+'<div class="detail-actions"></div><div class="detail-nav"><button class="previous-stop" '+(!index?'disabled':'')+'>← 上一站</button><button class="next-stop" '+(index===rows.length-1?'disabled':'')+'>下一站 →</button></div>';
+  s.detail.querySelector('.previous-stop').onclick=()=>selectTripStop(day,index-1);
+  s.detail.querySelector('.next-stop').onclick=()=>selectTripStop(day,index+1);
+  const close=document.createElement('button');close.className='close-stop';close.textContent='× 收起詳情';close.setAttribute('aria-label','收起所選行程點詳情');close.onclick=()=>{s.detail.hidden=true;s.idle.hidden=false;document.getElementById('live'+day).hidden=true;};s.detail.prepend(close);
+  const actions=s.detail.querySelector('.detail-actions');
+  if(p){
+    const info=document.createElement('button');info.textContent='頁內地圖・評價・照片';
+    info.onclick=()=>{originalShowPlace(day,row[1]);const panel=document.getElementById('live'+day);panel.hidden=false;s.detail.insertBefore(panel,s.detail.querySelector('.detail-nav'));panel.scrollIntoView({block:'nearest',behavior:reducedMotion?'instant':'smooth'});};actions.append(info);
+    if(prev&&prev[1]&&prev[1]!==row[1])for(const [mode,label]of[['walking','步行路線'],['transit','大眾運輸'],['driving','計程車／車程']]){
+      const b=document.createElement('button');b.textContent=label;b.onclick=()=>embedTripRoute(day,index,mode);actions.append(b);
+    }
+    if(diningKeys.includes(row[1])){
+      const b=document.createElement('button');b.textContent='餐點查證・日文語音';b.onclick=()=>{const box=document.getElementById('menu-'+row[1]);box.hidden=false;box.open=true;box.scrollIntoView({block:'start',behavior:reducedMotion?'instant':'smooth'});};actions.append(b);
+    }
+    const repeats=rows.map((r,i)=>r[1]===row[1]?i:-1).filter(i=>i>=0&&i!==index);
+    repeats.forEach(i=>{const b=document.createElement('button');b.textContent='同地點另有 '+letters[i]+'（'+rows[i][0]+'）';b.onclick=()=>selectTripStop(day,i);actions.append(b);});
+  }
+  if(!options.playback)document.getElementById('live'+day).hidden=true;
+  tripMarker(day,index);
+}
+function tweenTrip(day,fromIndex,toIndex,duration){
+  const s=tripStates.get(day),rows=DATA.days[day-1],a=rows[fromIndex],b=rows[toIndex];
+  if(reducedMotion||!a||!a[1]||!b||!b[1]||!s.dot)return;
+  const p=DATA.places[a[1]],q=DATA.places[b[1]],start=performance.now();
+  const tick=now=>{if(playingDay!==day)return;const t=Math.min(1,(now-start)/duration);s.dot.setLatLng([p[1]+(q[1]-p[1])*t,p[2]+(q[2]-p[2])*t]);if(t<1)frameId=requestAnimationFrame(tick);else frameId=null;};
+  frameId=requestAnimationFrame(tick);
+}
+function playTrip(day,restart=false){
+  const s=tripStates.get(day),rows=DATA.days[day-1];
+  if(s.playing&&!restart){stopPlayback();s.status.textContent='已暫停，可繼續播放或點選任一站';return;}
+  const index=restart||s.index<0||s.index>=rows.length-1?0:s.index;
+  stopPlayback();playingDay=day;s.playing=true;s.play.textContent='Ⅱ 暫停';s.play.setAttribute('aria-pressed','true');
+  const step=i=>{
+    if(playingDay!==day)return;
+    const old=s.index;selectTripStop(day,i,{playback:true});
+    const interval=Number(s.speed.value);if(i!==old)tweenTrip(day,old,i,Math.min(800,interval*.4));
+    if(i===rows.length-1){playbackTimer=setTimeout(()=>{if(playingDay!==day)return;stopPlayback();s.status.textContent='今日 '+rows.length+' 站展示完畢，按「重播」再看一次';s.play.textContent='▶ 再看一次';},interval);return;}
+    playbackTimer=setTimeout(()=>step(i+1),interval);
+  };step(index);
+}
+function arrangeTripLabels(day){
+  const map=maps[day],s=tripStates.get(day);if(!map||!s||!map.getContainer().offsetWidth)return;
+  (s.leaders||[]).forEach(l=>map.removeLayer(l));s.leaders=[];
+  const markers=[];map.eachLayer(l=>{if(l instanceof L.Marker)markers.push(l);});
+  const occupied=[],size=map.getSize();
+  markers.forEach(marker=>{
+    const real=map.latLngToContainerPoint(marker.getLatLng()),icon=marker.options.icon;
+    const w=icon.options.iconSize[0],h=44,candidates=[[0,-24]];
+    for(let radius=48;radius<=240;radius+=40)for(let a=0;a<8;a++){const angle=a*Math.PI/4;candidates.push([Math.cos(angle)*radius,Math.sin(angle)*radius]);}
+    let selected=candidates[0];
+    for(const [dx,dy]of candidates){const x=real.x+dx,y=real.y+dy;if(x-w/2<3||x+w/2>size.x-3||y-h/2<3||y+h/2>size.y-22)continue;
+      if(occupied.every(b=>Math.abs(x-b.x)>(w+b.w)/2+3||Math.abs(y-b.y)>h+3)){selected=[dx,dy];break;}}
+    const [dx,dy]=selected;occupied.push({x:real.x+dx,y:real.y+dy,w});
+    marker.setIcon(L.divIcon({...icon.options,iconAnchor:[w/2-dx,h/2-dy]}));
+    if(Math.hypot(dx,dy)>27)s.leaders.push(L.polyline([marker.getLatLng(),map.containerPointToLatLng([real.x+dx,real.y+dy])],{color:'#52705c',weight:1,opacity:.7,interactive:false}).addTo(map));
+  });
+  tripMarker(day,s.index);
+}
+DATA.days.forEach((rows,idx)=>{
+  const day=idx+1,host=document.getElementById('planner'+day);
+  host.querySelector('.mapintro').textContent='全日地圖在這裡。按 ▶ 依序看行程，或點 A、B、C 查看交通與詳情。';
+  const controls=document.createElement('div');controls.className='trip-controls';controls.innerHTML='<button class="play-trip" aria-pressed="false">▶ 播放今日順序</button><button class="replay-trip">↺ 重播</button><button class="overview-trip">全日總覽</button><select aria-label="行程動畫速度"><option value="2600">正常速度</option><option value="1500">快速</option><option value="4000">慢速</option></select>';
+  host.querySelector('.mapbox').after(controls);
+  const progress=document.createElement('div');progress.className='trip-progress';progress.innerHTML='<span>今日 '+rows.length+' 站</span><progress max="'+rows.length+'" value="0" aria-label="行程播放進度"></progress><span class="trip-counter">尚未播放</span>';controls.after(progress);
+  const status=document.createElement('p');status.className='trip-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');status.textContent='字母依時間排序；同地點合併標記，待定地址仍保留在下方順序。';progress.after(status);
+  const points=document.createElement('div');points.className='trip-points';points.setAttribute('aria-label','今日所有行程點');status.after(points);
+  rows.forEach((r,i)=>{const p=r[1]?DATA.places[r[1]]:null;const b=document.createElement('button');b.className='trip-point'+(!p?' pending':'');b.setAttribute('aria-pressed','false');b.innerHTML='<span class="letter '+(!p?'pendingletter':'')+'">'+letters[i]+'</span><span class="point-name">'+escapeHTML(p?p[0]:'待定／未公開地點')+'</span><span class="point-time">'+escapeHTML(r[0])+'</span>';b.onclick=()=>selectTripStop(day,i);points.append(b);});
+  const idle=document.createElement('p');idle.className='trip-idle';idle.textContent='點上方地標或行程卡片，查看這一站與上一站之間的交通。';points.after(idle);
+  const detail=document.createElement('section');detail.className='trip-detail';detail.hidden=true;detail.setAttribute('aria-label','所選行程點詳情');idle.after(detail);
+  detail.after(document.getElementById('live'+day));
+  const caption=document.createElement('p');caption.className='trip-caption';caption.textContent='動畫與虛線只表示造訪順序，不代表實際道路。交通時間為規劃估算；地圖座標仍待核實。';host.querySelector('.mapbox').querySelector('.mapcaption').textContent=caption.textContent;
+  const state={index:-1,playing:false,points,detail,idle,status,progress:progress.querySelector('progress'),counter:progress.querySelector('.trip-counter'),play:controls.querySelector('.play-trip'),speed:controls.querySelector('select'),dot:null};tripStates.set(day,state);
+  state.play.onclick=()=>playTrip(day);controls.querySelector('.replay-trip').onclick=()=>playTrip(day,true);
+  controls.querySelector('.overview-trip').onclick=()=>{stopPlayback();fitDaily(day);state.detail.hidden=true;idle.hidden=false;document.getElementById('live'+day).hidden=true;state.status.textContent='全日地圖・'+rows.length+' 個行程點';};
+  const map=maps[day];if(map){map.eachLayer(layer=>{if(!(layer instanceof L.Marker))return;layer.off('click');layer.on('click',()=>{const ll=layer.getLatLng();const matches=rows.map((r,i)=>{const p=r[1]?DATA.places[r[1]]:null;return p&&p[1]===ll.lat&&p[2]===ll.lng?i:-1;}).filter(i=>i>=0);if(matches.length)selectTripStop(day,matches[0]);});});map.on('zoomend moveend resize',()=>requestAnimationFrame(()=>arrangeTripLabels(day)));requestAnimationFrame(()=>arrangeTripLabels(day));}
+});
+// Older controls and pin callbacks use the same selected-stop detail panel.
+showPlace=function(day,key){const rows=DATA.days[day-1],s=tripStates.get(day);const current=s&&s.index>=0&&rows[s.index][1]===key?s.index:rows.findIndex(r=>r[1]===key);if(current>=0)selectTripStop(day,current);};
+document.querySelector('#filters button[data-day="all"]').remove();
+document.querySelectorAll('#filters button[data-day]').forEach(b=>b.addEventListener('click',()=>{
+  stopPlayback();const day=Number(b.dataset.day),s=tripStates.get(day);s.index=-1;s.progress.value=0;s.counter.textContent='尚未播放';s.detail.hidden=true;s.idle.hidden=false;document.getElementById('live'+day).hidden=true;s.points.querySelectorAll('.trip-point').forEach(p=>{p.classList.remove('selected');p.setAttribute('aria-pressed','false');});tripMarker(day,-1);s.status.textContent='全日地圖・'+DATA.days[day-1].length+' 個行程點';
+  requestAnimationFrame(()=>{fitDaily(day);document.getElementById('filters').scrollIntoView({block:'start',behavior:reducedMotion?'instant':'smooth'});});
+}));
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPlayback();});
 </script></body></html>
