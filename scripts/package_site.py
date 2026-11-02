@@ -1,9 +1,22 @@
 """Rebuild offline HTML, service-worker manifest and distributable ZIP."""
 from pathlib import Path
 import base64,hashlib,json,mimetypes,re,zipfile
+from xml.sax.saxutils import escape
 
 ROOT=Path(__file__).resolve().parents[1]
 html=(ROOT/'index.html').read_text()
+data=json.JSONDecoder().raw_decode(html.split('const DATA=',1)[1])[0]
+kml_bank={}
+for day,rows in enumerate(data['days'],1):
+    marks=[]
+    for index,row in enumerate(rows):
+        if not row[1]:continue
+        place=data['places'][row[1]]
+        marks.append('<Placemark><name>'+escape(chr(65+index)+' · '+place[0])+'</name><description>'+escape(row[0]+'｜'+row[2]+'｜'+row[3])+'</description><Point><coordinates>'+str(place[2])+','+str(place[1])+',0</coordinates></Point></Placemark>')
+    kml='<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>'+escape('11/'+str(day+12)+' 福岡四週年')+'</name>'+''.join(marks)+'</Document></kml>'
+    (ROOT/'maps'/('day'+str(day)+'.kml')).write_text(kml);kml_bank[str(day)]=kml
+html=re.sub(r'const kmlBank=.*?;\n',lambda m:'const kmlBank='+json.dumps(kml_bank,ensure_ascii=False)+';\n',html,count=1)
+(ROOT/'index.html').write_text(html)
 offline=html
 for name in ['assets/field-guide.css']:
     offline=offline.replace(f'<link rel="stylesheet" href="{name}">','<style>'+(ROOT/name).read_text()+'</style>')
@@ -29,6 +42,7 @@ offline=offline.replace("'use strict';\n  const facts", "'use strict';\n  const 
 paths=['./','./index.html','./manifest.webmanifest','./icon.svg']
 paths += ['./'+p.relative_to(ROOT).as_posix() for p in (ROOT/'assets').rglob('*') if p.is_file()]
 paths += ['./'+p.name for p in ROOT.glob('*SOURCES.json')]
+paths += ['./'+p.relative_to(ROOT).as_posix() for p in (ROOT/'maps').glob('*.kml')]
 paths += ['./GOOGLE-RATINGS.json','./VERIFICATION.json','./AUDIO-LICENSE.txt']
 version=hashlib.sha256(''.join(hashlib.sha256((ROOT/p.removeprefix('./')).read_bytes()).hexdigest() for p in paths if p not in ['./']).encode()).hexdigest()[:12]
 sw="""const VERSION='anniversary-__VERSION__';

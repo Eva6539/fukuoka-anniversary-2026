@@ -147,10 +147,10 @@
     }
     if (!key) { const p = document.createElement('p'); p.className = 'helper-note'; p.textContent = day===3&&index===5?'這一站留給你們的私人安排。沒有公開地址，地圖不顯示位置。':'這段保留彈性；選好店家後，向飯店詢問路線或用頁內 Google 地圖搜尋。'; transport.append(p); }
     if (key && LIVE.photos[key] && !rec) visit.append(photoFigure(key));
-    if (f) { const p = document.createElement('p'); p.textContent = f.tip; visit.append(p); const hours = document.createElement('div'); hours.className = 'hour-block'; hours.innerHTML = '<h4>營業／參訪時間</h4><p>' + esc(f.hours) + '</p>'; visit.append(hours); }
-    else { const p = document.createElement('p'); p.textContent = row[3]; visit.append(p); }
-    const rating = LIVE.ratings[key]; if (rating && typeof rating.score === 'number') { const el = document.createElement('div'); el.className = 'verified-rating'; el.innerHTML = '<strong>★ '+rating.score.toFixed(1)+'</strong> Google'+(rating.reviewCount?' · '+rating.reviewCount.toLocaleString()+' 則評論':'')+'<small>'+facts.checked+' 查核快照</small>'; visit.append(el); }
     if (rec) mealContent(key, visit);
+    if (f) { let info=visit;if(rec){info=document.createElement('details');info.className='support-details';info.innerHTML='<summary>營業與到店提醒</summary>';visit.append(info);}const p = document.createElement('p'); p.textContent = f.tip; info.append(p); const hours = document.createElement('div'); hours.className = 'hour-block'; hours.innerHTML = '<h4>營業／參訪時間</h4><p>' + esc(f.hours) + '</p>'; info.append(hours); }
+    else { const p = document.createElement('p'); p.textContent = row[3]; visit.append(p); }
+    const rating = LIVE.ratings[key]; if (rating && typeof rating.score === 'number') { const el = document.createElement('div'); el.className = 'verified-rating'; el.innerHTML = '<strong>★ '+rating.score.toFixed(1)+'</strong> Google'+(rating.reviewCount?' · '+rating.reviewCount.toLocaleString()+' 則評論':'')+'<small>'+facts.checked+' 查核快照</small>';if(rec)$('.menu-photos',visit).after(el);else visit.append(el); }
     const source = document.createElement('div'); source.innerHTML = sourcesBlock(key); visit.append(source);
     const phrases = allPhrases.get(key) || (key==='airport'?travelPhrases.filter(p=>p.id==='support01') : key==='miyako'?travelPhrases.filter(p=>['support02','support08'].includes(p.id)) : key==='one'?travelPhrases.filter(p=>['support03','support08'].includes(p.id)) : travelPhrases.filter(p=>['support03','support04','support11'].includes(p.id)));
     for (const phrase of phrases) language.append(phraseCard(phrase));
